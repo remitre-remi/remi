@@ -1,3 +1,5 @@
+import turtle
+
 # harjutus04
 #
 # Kingituste pakkimine
@@ -10,6 +12,18 @@
 #   Näide:
 #   Kasutaja sisestab: 23
 #   Programm väljastab: Saad teha 4 täis kinkekasti. Üle jääb 3 kingitust.
+
+try:
+    r = float(input("Ringi raadius r="))
+    s = 3.14 * r ** 2
+    p = 2 * 3.14 * r
+    print(f"Ringi pindala on {s:0.2f} ja ümbermõõt on {p:.2f}")
+    turtle.circle(r)
+except:
+    print("Kontrolli sisestust!")
+
+
+
 
 #veakontroll
 try:
@@ -55,3 +69,5 @@ a = int(input("Lisa külg 1: "))
 b = int(input("Lisa külg 2: "))
 p = (a+b)*2
 print(f"Aia pikkus on {p} meetrit.")
+
+turtle.done()
