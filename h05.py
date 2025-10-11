@@ -13,14 +13,15 @@ import turtle
 
 
 arvamus = input("kull või kiri: ")
-mynt = random.randint (0,1)
+mynt = random.randint(0,1)
 turtle.color("green")
+turtle.speed(0)
 if mynt==0 and arvamus=="kiri":
     turtle.circle(100)
     print("Tubli!")
 elif mynt==1 and arvamus=="kull":
-    print("Tubli!")
     turtle.circle(100)
+    print("Tubli!")
 else:
     turtle.color("red")
     turtle.circle(100)
