@@ -1,15 +1,13 @@
 import random
 import turtle
 
-# Harjutus 05
-
+# Harjutus 05.4
 # Mündiviskamise äraarvamine koos juhuslikkusega (and ja or)
 # Kirjuta programm, mis simuleerib mündiviskamist. Programm genereerib juhusliku tulemuse – “kiri” või “kull”, kasutades random.randint(0,1) funktsiooni. Programmi koostamisel pead importima import random mooduli ja kasutama randint() funktsiooni, et valida kahe võimaliku tulemuse vahel. Näiteks, kui randint(0, 1) annab tulemuseks 0, siis võib see tähendada “kirja”, ja 1 võib tähendada “kulli”.
 # Seejärel palub programm kasutajal arvata, kumb külg maandub ülespoole.
 # Kasuta if lauset, et kontrollida, kas kasutaja arvas õigesti. Kui arvas õigesti, siis joonista Turtle abil roheline ring; kui valesti, siis punane ring.
 # 0 - kiri
 # 1 - kull
-
 
 
 arvamus = input("kull või kiri: ")
@@ -28,16 +26,17 @@ else:
     print("proovi uuesti!")
 
 
-turtle.done()
-
-#Harj 5.3
+#Harj 05.3
 # Matemaatika test (randint)
-# Kirjuta programm, mis kontrollib kasutaja poolt sisestatud vastust lihtsale matemaatikaülesandele.
-# Näiteks, programm esitab küsimuse “Mis on 3 korda 4?”. Kasutaja peab sisestama vastuse. Kui kasutaja vastus on 12, siis programm väljastab “Õige vastus!”, kui aga vastus on midagi muud, siis väljastab “Vale vastus, proovi uuesti!”.
+# Kirjuta programm, mis kontrollib kasutaja poolt sisestatud vastust lihtsale
+# matemaatikaülesandele.
+# Näiteks, programm esitab küsimuse “Mis on 3 korda 4?”. Kasutaja peab
+# sisestama vastuse. Kui kasutaja vastus on 12, siis programm väljastab “Õige vastus!”,
+# kui aga vastus on midagi muud, siis väljastab “Vale vastus, proovi uuesti!”.
 # Kasuta if ja else lauseid selleks, et kontrollida kasutaja sisestatud vastust.
 
-arv1 = random.randint (1,10)
-arv2 = random.randint (1,10)
+arv1 = random.randint(1,10)
+arv2 = random.randint(1,10)
 tehe = arv1 * arv2
 vastus = int(input(f"{arv1} x {arv2} = "))
 if vastus == tehe:
@@ -46,7 +45,7 @@ else:
     print("Istu, 2!")
 
 
-# Harj 5.1 
+# Harj 05.1 
 # Vanusepiiranguga üritus
 # Sa oled loomas programmi, mis aitab kontrollida,
 # kas inimesed vastavad vanusepiirangu nõuetele üritusel osalemiseks.
@@ -60,4 +59,9 @@ else:
 vanus = int(input("Lisa vanus: "))
 if vanus>=18:
     print("võib üritusele siseneda")
+else:
+    print("mine koju!")
+
+
+turtle.done()
         

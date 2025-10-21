@@ -1,17 +1,16 @@
 import turtle
 
-# harjutus04
-#
-# Kingituste pakkimine
-# 	Sa töötad kingipoes ja sinu ülesanne on pakkida kingitusi.
-# 	Igasse kinkekarpi mahub täpselt 5 kingitust.
-#   Sinu ülesandeks on arvutada, mitu täis kinkekasti saad teha ja mitu kingitust jääb üle, kui need kõik ei mahu karpidesse.
-#   Loo programm, mis küsib kasutajalt, mitu kingitust on vaja pakkida.
-#   Programm peaks seejärel arvutama, mitu täis kinkekasti saab teha ja mitu kingitust jääb üle. Kasuta täisarvulist jagamist (//) kinkekarpide arvu leidmiseks ja jäägi (%) operaatorit ülejäävate kingituste arvu leidmiseks.
-#   Kasuta veakontrolli ja vastuse vormindamist
-#   Näide:
-#   Kasutaja sisestab: 23
-#   Programm väljastab: Saad teha 4 täis kinkekasti. Üle jääb 3 kingitust.
+# Harjutus 5. Ringi pindala ja turtle
+# Kirjuta programm, mis kasutab Turtle graafikat joonistamaks ringi ning
+# arvutab ja kuvab konsoolis ringi pindala ja ümbermõõdu.
+# Programm küsib kasutajalt ringi raadiuse.
+# Kasuta ** operaatorit raadiuse ruudu arvutamiseks ja π väärtusena 3.14.
+# Lisa veakontroll, et kontrollida kasutaja sisestatud raadiuse korrektsust.
+# Väljasta lause, kasutades f-string vormindamist ja ümardamist 2 komakohta
+# Näide:
+# Kasutaja sisestab: 5
+# Programm väljastab konsoolis: Ringi pindala on 78.5 ja ümbermõõt on 31.4
+# Turtle graafika joonistab vastava ringi
 
 try:
     r = float(input("Ringi raadius r="))
@@ -23,6 +22,19 @@ except:
     print("Kontrolli sisestust!")
 
 
+#   harjutus 4. Kingituste pakkimine
+#   Sa töötad kingipoes ja sinu ülesanne on pakkida kingitusi.
+#   Igasse kinkekarpi mahub täpselt 5 kingitust.
+#   Sinu ülesandeks on arvutada, mitu täis kinkekasti saad teha ja
+#   mitu kingitust jääb üle, kui need kõik ei mahu karpidesse.
+#   Loo programm, mis küsib kasutajalt, mitu kingitust on vaja pakkida.
+#   Programm peaks seejärel arvutama, mitu täis kinkekasti saab teha ja
+#   mitu kingitust jääb üle. Kasuta täisarvulist jagamist (//) kinkekarpide arvu
+#   leidmiseks ja jäägi (%) operaatorit ülejäävate kingituste arvu leidmiseks.
+#   Kasuta veakontrolli ja vastuse vormindamist
+#   Näide:
+#   Kasutaja sisestab: 23
+#   Programm väljastab: Saad teha 4 täis kinkekasti. Üle jääb 3 kingitust.
 
 
 #veakontroll
@@ -38,13 +50,14 @@ except:
     print("Kontrolli sisestust")
 
 
-# Raamatute allahindlus
-#     Raamatupoes on 30% soodusmüük.
-#     Kirjuta programm, mis küsib kasutajalt soovitud raamatute arvu ja arvutab nende kogumaksumuse, kui iga raamatu tavahind on 12,53€.
-#     Väljasta lause, kasutades f-string vormindamist ja ümardamist 2 komakohta
-#     Näide:
-#     Kasutaja sisestab: 3
-#     Programm väljastab: 3 raamatu hind soodustusega on 26.25€.
+# Harjutus 2. Raamatute allahindlus
+# Raamatupoes on 30% soodusmüük.
+# Kirjuta programm, mis küsib kasutajalt soovitud raamatute arvu ja arvutab
+# nende kogumaksumuse, kui iga raamatu tavahind on 12,53€.
+# Väljasta lause, kasutades f-string vormindamist ja ümardamist 2 komakohta
+# Näide:
+# Kasutaja sisestab: 3
+# Programm väljastab: 3 raamatu hind soodustusega on 26.25€.
 
 ale = 0.3
 hind = 12.53
@@ -55,14 +68,14 @@ print(f"{kogus} raamatu hind soodustusega on {summa:0.2f}€.") #0.2f - float eh
 
 
 
-# Aia pikkus
-# 	Kirjuta programm, mis aitab aiapidajal arvutada aia ümbermõõtu.
-# 	Aed on ristküliku kujuline. (a+b)*2 = P
-# 	Programm peaks küsima kasutajalt kahe aiaosa pikkused meetrites ja seejärel arvutama aia kogupikkuse.
-# 	Väljasta lause, kasutades f-string vormindamist.
-# 	Näide:
-# 	Kasutaja sisestab: 4 ja 5
-# 	Programm väljastab: Aia kogupikkus on 18 meetrit.
+# Harjutus 1. Aia pikkus
+# Kirjuta programm, mis aitab aiapidajal arvutada aia ümbermõõtu.
+# Aed on ristküliku kujuline. (a+b)*2 = P
+# Programm peaks küsima kasutajalt kahe aiaosa pikkused meetrites ja seejärel arvutama aia kogupikkuse.
+# Väljasta lause, kasutades f-string vormindamist.
+# Näide:
+# Kasutaja sisestab: 4 ja 5
+# Programm väljastab: Aia kogupikkus on 18 meetrit.
 
 #kasutaja sisestus ja muudan täisarvuks
 a = int(input("Lisa külg 1: "))

@@ -1,7 +1,7 @@
 import turtle
 
 #kilpkonna seaded
-turtle.speed(0)
+turtle.speed(10)
 ekraan = turtle.Screen()
 ekraan.title("Olümpiarõngad - Remi Treier")
 ekraan.setup(500,400)
