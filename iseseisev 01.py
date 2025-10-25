@@ -6,7 +6,6 @@
 print("Tere, maailm!")
 
 
-
 # 1.2. Aasta liblikas
 # Koostada programm, mille
 # ● 1. real luuakse muutuja nimega aasta ning antakse sellele väärtuseks 2020 (arvuna);
@@ -19,6 +18,12 @@ print("Tere, maailm!")
 # mis teisendab arvu sõneks);
 # ● 5. real väljastatakse muutuja lause väärtus ekraanile.
 
+aasta = 2020
+liblikas = "teelehe-mosaiikliblikas"
+lause_keskosa = "aasta liblikas on"
+lause = (aasta,lause_keskosa,liblikas)
+print(lause)
+
 
 # 1.3. Pilved
 # Pilvede alumise pinna (aluse) kõrguse järgi liigitatakse pilvi ülemise, keskmise ja alumise kihi
@@ -29,6 +34,11 @@ print("Tere, maailm!")
 # ● väljastab Need ei ole ülemised pilved, kui kõrgus on 6,0 km või alla selle.
 # Kasutaja peab saama sisestada pilvede kõrgust nii täisarvuna kui ka ujukomaarvuna, nt 7.5.
 
+k = float(input("Pilve kõrgus="))
+if k > 6.0 :
+    print("Need on ülemised pilved!")
+else:
+    print("Need ei ole ülemised pilved!")
 
 # 1.4. Bussid
 # Meil on vaja transportida teatud arv inimesi mingi arvu identsete bussidega. Eeldame, et reisijaid
@@ -44,3 +54,15 @@ print("Tere, maailm!")
 # ● inimeste arv: 80, kohtade arv: 40;
 # ● inimeste arv: 20, kohtade arv: 40;
 # ● inimeste arv: 40, kohtade arv: 40.
+
+
+inimesed = int(input("inimeste arv: "))
+kohtade_arv = 40
+
+busse = inimesed // kohtade_arv 
+ylejaak = inimesed % kohtade_arv 
+busside_arv = busse+1
+
+print(f"Busse on vaja {busside_arv}")
+print(f"Täis busse on {busse}")
+print(f"Ülejäänud {ylejaak} lähevad viimasesse bussi")
