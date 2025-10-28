@@ -56,3 +56,6 @@ turtle.lt(90)
 turtle.fd(10)
 
 turtle.done()
+
+
+#prooviks täna
