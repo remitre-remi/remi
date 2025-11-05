@@ -21,8 +21,8 @@ print("Tere, maailm!")
 aasta = 2020
 liblikas = "teelehe-mosaiikliblikas"
 lause_keskosa = "aasta liblikas on"
-lause = (aasta,lause_keskosa,liblikas)
-print(lause)
+
+print(aasta, lause_keskosa, liblikas)
 
 
 # 1.3. Pilved
@@ -61,7 +61,7 @@ kohtade_arv = 40
 
 busse = inimesed // kohtade_arv 
 ylejaak = inimesed % kohtade_arv 
-busside_arv = busse+1
+busside_arv = busse+1       #SIIN ON VALESTI!!!
 
 print(f"Busse on vaja {busside_arv}")
 print(f"Täis busse on {busse}")
