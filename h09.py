@@ -1,13 +1,88 @@
 
 # Harjutus 09
 
-for i in range(1,21):
-    if i%15 == 0:
-        print(i,"TIKTAK")
-    elif i%3 == 0:
-        print(i,"TIK")
-    elif i%5 == 0:
-        print(i,"TAK")
+
+ev_data = [
+['vehicle', 'range', 'price'],
+['Tesla Model Y Long Range', '330', '58990'],
+['Volkswagen ID.4 Pro', '260', '39995'],
+['Ford Mustang Mach-E', '300', '42995'],
+['Audi e-tron GT', '238', '102700'],
+['Nissan Leaf', '149', '27400'],
+['BMW iX xDrive50', '324', '83995'],
+['Polestar 2', '265', '45500'],
+['Kia EV6 Long Range', '310', '47795'],
+['Mercedes-Benz EQS 450+', '350', '102310'],
+['Hyundai Kona Electric', '258', '37400']
+]
+
+lugeja = 0
+r_kokku = 0
+p_kokku = 0
+
+#print(ev_data[0][-1])
+
+for i in ev_data:
+    print(f"{i[0]:30} {i[1]:10} {i[2]:40}") #vormindan tulpadenA :30 on laius
+    if (i[1]).isnumeric()==True:
+        r_kokku+=int(i[1])
+        p_kokku+=int(i[2])
+        lugeja+=1 #lugeja = lugeja + 1
+
+
+print(f"Sõidu ulatus keskmine: {r_kokku/lugeja}")
+print(f"Hind keskmine: {p_kokku/lugeja}")
+
+
+print("Autod, mis sõidavad 300+")    
+for j in ev_data:
+    if (j[1]).isnumeric()==True:
+        if int(j[1]) >= 300:
+            print(j[0])
+
+
+parim_hinnasuhe = 0
+parim_auto = ""
+
+for i in ev_data:
+    if (i[1]).isnumeric()==True:
+        km_tasu = float(i[2] / float(i[1])
+        print(km_tasu)
+
+
+print(f"Parim elektriauto: {parim_auto}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for i in range(1,21):
+#     if i%15 == 0:
+#         print(i,"TIKTAK")
+#     elif i%3 == 0:
+#         print(i,"TIK")
+#     elif i%5 == 0:
+#         print(i,"TAK")
     
-    else:
-        print(i)
+#     else:
+#         print(i)
