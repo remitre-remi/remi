@@ -35,10 +35,10 @@ print(f"Hind keskmine: {p_kokku/lugeja}")
 
 
 print("Autod, mis sõidavad 300+")    
-for j in ev_data:
-    if (j[1]).isnumeric()==True:
-        if int(j[1]) >= 300:
-            print(j[0])
+for i in ev_data:
+    if (i[1]).isnumeric()==True:
+        if int(i[1]) >= 300:
+            print(i[0])
 
 
 parim_hinnasuhe = 0
@@ -53,7 +53,7 @@ for i in ev_data:
 print(f"Parim elektriauto: {parim_auto}")
 
 
-
+sdhjgfa
 
 
 
