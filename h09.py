@@ -23,7 +23,7 @@ p_kokku = 0
 #print(ev_data[0][-1])
 
 for i in ev_data:
-    print(f"{i[0]:30} {i[1]:10} {i[2]:40}") #vormindan tulpadenA :30 on laius
+    print(f"{i[0]:30} {i[1]:10} {i[2]:10}") #vormindan tulpadenA :30 on laius
     if (i[1]).isnumeric()==True:
         r_kokku+=int(i[1])
         p_kokku+=int(i[2])
@@ -41,19 +41,22 @@ for i in ev_data:
             print(i[0])
 
 
-parim_hinnasuhe = 0
+parim_hinnasuhe = 100000000000000000000000
 parim_auto = ""
 
 for i in ev_data:
     if (i[1]).isnumeric()==True:
-        km_tasu = float(i[2] / float(i[1])
-        print(km_tasu)
+        km_tasu = int(i[2]) / int(i[1])
+        if km_tasu<parim_hinnasuhe:
+            parim_hinnasuhe = km_tasu
+            parim_auto = i[0]
+
 
 
 print(f"Parim elektriauto: {parim_auto}")
 
 
-sdhjgfa
+
 
 
 
