@@ -65,3 +65,7 @@ print(f"mängin: {albumid[lugu-1]}")
 # 
 # for i in nimede_loend:
 #    print(i)
+
+
+
+#prooviks täna ja homme

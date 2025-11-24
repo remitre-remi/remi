@@ -30,3 +30,6 @@ print(sarnased_esitahed('Lahe Känguru'))
 
 # tervita("Karin", "Eegreid")
 # print(tervita2())
+
+
+#prooviks täna ja homme

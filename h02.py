@@ -41,3 +41,5 @@ turtle.circle(50)
 
 
 turtle.done()
+
+#prooviks täna ja homme

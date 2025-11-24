@@ -19,3 +19,6 @@ for i in range(5):
 
 
 turtle.done()
+
+
+#prooviks täna ja homme

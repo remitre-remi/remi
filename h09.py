@@ -89,3 +89,7 @@ print(f"Parim elektriauto: {parim_auto}")
     
 #     else:
 #         print(i)
+
+
+
+#prooviks täna ja homme

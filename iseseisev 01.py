@@ -66,3 +66,6 @@ busside_arv = busse+1       #SIIN ON VALESTI!!!
 print(f"Busse on vaja {busside_arv}")
 print(f"Täis busse on {busse}")
 print(f"Ülejäänud {ylejaak} lähevad viimasesse bussi")
+
+
+#prooviks täna ja homme

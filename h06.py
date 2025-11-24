@@ -36,3 +36,5 @@ turtle.fd(c*koef)
 
 
 turtle.done()
+
+#prooviks täna ja homme

@@ -19,3 +19,4 @@ while loop:
     sum+=int(arv)
 print(f"Keskmine: {sum/counter}")
 
+#prooviks täna ja homme

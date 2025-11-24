@@ -47,3 +47,7 @@ algne_saldo=konto_haldur("deposiit", 10, algne_saldo)
 print(algne_saldo)
 print(konto_haldur.__doc__)
 
+
+
+
+#prooviks täna ja homme

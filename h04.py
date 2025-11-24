@@ -84,3 +84,5 @@ p = (a+b)*2
 print(f"Aia pikkus on {p} meetrit.")
 
 turtle.done()
+
+#prooviks täna ja homme

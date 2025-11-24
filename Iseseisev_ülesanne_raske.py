@@ -102,3 +102,8 @@ try:                                    #eelkontroll, et sisestus oleks õige
        
 except:
     print("Miskit läks nihu!")          #kontrolli vastus
+
+
+
+
+    #prooviks täna ja homme

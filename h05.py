@@ -64,4 +64,7 @@ else:
 
 
 turtle.done()
+
+
+#prooviks täna ja homme
         
