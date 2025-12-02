@@ -61,9 +61,12 @@ kohtade_arv = 40
 
 busse = inimesed // kohtade_arv 
 ylejaak = inimesed % kohtade_arv 
-busside_arv = busse+1       #SIIN ON VALESTI!!!
+if ylejaak>= 1:
+    print(f"Busse on vaja {busse+ 1}")
+else:
+    print(f"Busse on vaja {busse+ 0}")
 
-print(f"Busse on vaja {busside_arv}")
+
 print(f"Täis busse on {busse}")
 print(f"Ülejäänud {ylejaak} lähevad viimasesse bussi")
 
