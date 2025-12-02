@@ -15,9 +15,9 @@ import random
 # Soovid jätkata?
 
 
-#erinevad kujundid "def" funktsiooniga välja kirjutatud - "def" funktsiooni aitas välja selgitada AI
+#erinevad kujundid "def" funktsiooniga välja kirjutatud - "def" ja "random.choice" funktsiooni aitas välja selgitada AI
 def joonista_ruut():
-    for i in range(4):
+    for _ in range(4):
         turtle.fd(100)
         turtle.lt(90)
 
@@ -26,7 +26,7 @@ def joonista_ring():
 
 def joonista_viisnurk():
     for _ in range(5):
-        turtle.forward(50)
+        turtle.forward(75)
         turtle.left(72)
 
 def joonista_suvaline():                                            
@@ -34,7 +34,7 @@ def joonista_suvaline():
     random.choice(kujundid)()
 
 
-# Peaprogramm
+# programm, mille pani paika AI..."break" ja "while true" funktsiooni oleks otsind kauakaua
 while True:
     valik = input("Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline)? ")
     if valik == "":
@@ -59,14 +59,15 @@ while True:
         else:
             print("Tundmatu valik!")
     
-    lopetamine = input("Kas soovid jätkata?")
+    #lõpetamise jupi panin ise 
+    lopetamine = input("Kas soovid jätkata?") 
     if lopetamine == "jah":
         print(valik)
     elif lopetamine =="ei":
         print("Head aega!")
         break
     else:
-        print("Tundmatu valik!")
+        print("Tundmatu valik, head aega!")
         break
 
 
